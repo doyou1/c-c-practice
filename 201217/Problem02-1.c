@@ -8,10 +8,10 @@
 // }
 
 // 문제 02-1 문제 2
-// int main(void){
-//     printf("이름 : 심재형\n");
-//     printf("주소 : 지산동89번길 11\n");
-//     printf("번호 : 01033636744\n");
+ int main(void){
+     printf("이름 : 심재형\n");
+     printf("주소 : 지산동89번길 11\n");
+     printf("번호 : 01033636744\n");
 
-//     return 0;
-// }
+     return 0;
+}
