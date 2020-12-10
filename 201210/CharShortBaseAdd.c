@@ -15,5 +15,9 @@ int main(void)
     printf("size of char add : %d \n", sizeof(num1+ num2));
     printf("size of short add : %d \n", sizeof(num3+num4));
 
+    result1=num1+num2;
+    result2=num3+num4;
+    // 1, 2
+    printf("size of result & result2 : %d, %d \n", sizeof(result1), sizeof(result2));
     return 0;
 }
