@@ -47,3 +47,21 @@
 // }
 
 // 문제4
+int main(void)
+{
+    int arr[6]={1,2,3,4,5,6};
+    int * ptr1=&arr[0], *ptr2=&arr[5];
+    int temp,i;
+
+    for(i=0;i<6/2;i++)
+    {
+        temp=*(ptr1+i);
+        *(ptr1+i)=*(ptr2-i);
+        *(ptr2-i)=temp;
+    }
+
+    for(i=0;i<6;i++)
+        printf("%d ", arr[i]);
+    
+    return 0;
+}
