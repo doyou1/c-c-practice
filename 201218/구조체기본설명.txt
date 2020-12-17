@@ -1,0 +1,18 @@
+구조체!
+
+- 하나 이상의 변수(포인터 변수와 배열 포함)를 묶어서 새로운 자료형을 정의하는 도구
+
+struct point    // point라는 이름의 구조체 정의
+{
+    int xpos;   // point 구조체를 구성하는 멤버 xpos
+    int ypos;   // point 구조체를 구성하는 멤버 ypos
+}
+
+struct type_name val_name;  // 구조체 변수선언의 기본 형태
+struct point pos;
+struct person man;
+
+구조체 변수의 이름.구조체 멤버의 이름
+pos.xpos=20;        // 구조체 변수 pos의 멤버 xpos에 20을 저장
+
+printf("%s \n", man.name);  // 구조체 변수 man의 멤버 name에 저장된 내용
