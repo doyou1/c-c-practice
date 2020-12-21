@@ -1,0 +1,16 @@
+- malloc 함수의 사본뻘되는 calloc 함수
+
+// 4바이트 크기의 블록(elt_size) 30개를(elt_count) 힙영역에 할당해주세요.
+void * calloc(size_t elt_count, size_t elt_size);
+> 성공시 할당된 메모리의 주소값, 실패시 NULL 반환
+
+- 힙에 할당된 메모리 공간 확장 시 호출하는 realloc 함수
+
+// ptr이 가리키는 메모리의 크기를 size 크기로 조절해줘(늘려줘)
+void * realloc(void * ptr, size_t size);
+
+// 길이가 3인 int형 배열 할당
+> int * arr = (int *)malloc(sizeof(int)*3); 
+
+// 길이가 5인 int형 배열 확장
+> arr = (int *)realloc(arr,sizeof(int)*5);
